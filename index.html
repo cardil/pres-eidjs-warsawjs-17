@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WarsawJS Slides: Template</title>
+    <title>ExceptionID.js - sytuacje wyjątkowe w aplikacjach JS</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=792, user-scalable=no">
@@ -9,10 +9,11 @@
 
     <link rel="stylesheet" href="themes/warsawjs/styles/ribbon-theme.css">
     <link rel="stylesheet" href="themes/warsawjs/styles/warsawjs-theme.css">
+    <script type="application/javascript" src="https://rawgit.com/wavesoftware/javascript-eid-exceptions/77b396271e0b8967dada0ad32e663400e832bab8/dist/browser/toplevel/eid.min.js"></script>
 </head>
 <body class="list">
     <header class="caption">
-        <h1>WarsawJS Slides: Template</h1>
+        <h1>WarsawJS #17: ExceptionID.js - sytuacje wyjątkowe w aplikacjach JS</h1>
         <p>We talk about JavaScript. Each month in Warsaw, Poland.</p>
     </header>
 
@@ -27,111 +28,402 @@
                 <img src="pictures/speaker.jpg" alt="Speaker" />
 
                 <!-- 2. Speaker -->
-                <h2>Speaker name</h2>
+                <h2>Krzysztof Suszyński</h2>
 
                 <!-- 3. Presentation title -->
-                <h2><strong>"WarsawJS Slides: Template"</strong></h2>
+                <h2><strong>"ExceptionID.js - sytuacje wyjątkowe w aplikacjach JS"</strong></h2>
 
                 <!-- 4. Presentation date -->
-                <h2>XXXX-XX-XX</h2>
+                <h2>2016-01-13</h2>
 
                 <!-- 5. Contact the speaker -->
-                <h2><a href="http://twitter.com/speaker">@speaker</a></h2>
+                <h2><a href="http://twitter.com/ksuszynski">@ksuszynski</a></h2>
             </div>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>Plain Text on Your Slides</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco
-                laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in
-                reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>All Kind of Lists</h2>
-            <ol>
-                <li>Simple lists are marked with bullets</li>
-                <li>Ordered lists begin with a number</li>
-                <li>You can even nest lists one inside another
-                    <ul>
-                        <li>Or mix their types</li>
-                        <li>But do not go too far</li>
-                        <li>Otherwise audience will be bored</li>
-                    </ul>
-                </li>
-                <li>Look, seven rows exactly!</li>
-            </ol>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2>JavaScript Samples</h2>
-            <pre>
-                <code><mark class="comment">// Crockford style IIFE</mark></code>
-                <code>(function () {</code>
-                <code>  var <mark>someVar</mark> = 'value';</code>
-                <code>  console.<mark class="important">log</mark>(someVar);</code>
-                <code>}());</code>
-            </pre>
-        </div>
-    </section>
-    <section class="slide">
-        <div>
-            <h2>Even Tables</h2>
-            <table>
-                <tr>
-                    <th scope="col">Locavore</th>
-                    <th>Umami</th>
-                    <th>Helvetica</th>
-                    <th>Vegan</th>
-                </tr>
-                <tr>
-                    <th scope="row">Fingerstache</th>
-                    <td>Kale</td>
-                    <td>Chips</td>
-                    <td>Keytar</td>
-                </tr>
-                <tr>
-                    <th scope="row">Sriracha</th>
-                    <td>Gluten-free</td>
-                    <td>Ennui</td>
-                    <td>Keffiyeh</td>
-                </tr>
-                <tr>
-                    <th scope="row">Thundercats</th>
-                    <td>Jean</td>
-                    <td>Shorts</td>
-                    <td>Biodiesel</td>
-                </tr>
-                <tr>
-                    <th scope="row">Terry</th>
-                    <td>Richardson</td>
-                    <td>Swag</td>
-                    <td>Blog</td>
-                </tr>
-            </table>
-            <p>It’s good to have information organized.</p>
-        </div>
-    </section>
-
-    <section class="slide cover">
-        <div>
-            <img src="pictures/bigphoto.jpg" alt="">
         </div>
     </section>
 
     <section class="slide shout">
         <div>
-            <h2>See you next month at WarsawJS</h2>
+            <h2>Kim jestem?</h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+          <h2>Krzysztof Suszyński</h2>
+          <ul>
+            <li>Ewangelizuje Javą i Puppetem</li>
+            <li class="fragment">Główny programista w COI / Trener w SAGES</li>
+            <li>Javascript hater &amp; fanboy od 2007r.</li>
+            <li>OSS @ gov</li>
+          </ul>
+          <span>
+            <img height="100" src="pictures/logo/puppet.png"/>
+            <img height="100" src="pictures/logo/jboss.png"/>
+            <img height="100" src="pictures/logo/ruby-logo.png"/>
+            <img height="100" src="pictures/logo/java-logo.png"/>
+            <img height="100" src="pictures/logo/js-logo.jpg"/>
+          </span>
+        </div>
+    </section>
+
+    <section class="slide shout">
+        <div>
+            <h2>Dlaczego?</h2>
+        </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Bezpośrednia motywacja</h2>
+        <p>debugging-js by <a href="http://tuhaj.github.io/debugging-js">Piotr Zientara @ WarsawJS #13</a></p>
+        <p>Słuchałem i pomyślałem, że można lepiej poradzić sobie z błędami...</p>
+        <p>Orginalny pomysł - kolega z COI: Karol Lassak</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Powiem jak to okiełznać</h2>
+        <img style="height:400px" src="http://tuhaj.github.io/debugging-js/pictures/error.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Również nietypowe błędy</h2>
+        <img style="height: 200px" src="http://tuhaj.github.io/debugging-js/pictures/unexpected_token.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Oraz te ciężkie do znalezienia</h2>
+        <img style="height:400px" src="http://tuhaj.github.io/debugging-js/pictures/debug_view_1.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Powiem jak sprawić by strony 500 były przydatne</h2>
+        <img style="height:300px" src="pictures/google-500-error.png" />
+      </div>
+    </section>
+
+    <section class="slide shout">
+      <div>
+        <h2>We are in future! 2016!</h2>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Aplikacje są coraz więsze</h2>
+        <ol>
+          <li>Integracje, webserwisy, REST</li>
+          <li>Internet of things</li>
+          <li>Microserwisy</li>
+          <li>DevOps == Dev + Ops + QA</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Enterprise migruje do JS</h2>
+        <ol>
+          <li>aplikacje Enterprise są MASYWNE!</li>
+          <li>np. ponad <mark>3000 różnych</mark> formularzy</li>
+          <li>np. ponad 2 mln linii kodu</li>
+          <li>około połowa kodu to frontend generowany z serwera: jsf, .net itp.</li>
+          <li>ile to byłoby modułów Angular/React/Whatever??</li>
+          <li>ile trwa kompilacja <mark>1mln</mark> linii kodu w TypeScript/ES6/ES7?!?</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Ilość błędów rośnie wraz ze złożonością</h2>
+        <p>Wielkość kodu powoduje <mark>wykładniczy</mark> wzrost złożoności</p>
+        <p>Złożoność powoduje <mark>liniowy</mark> przyrost błędów</p>
+      </div>
+    </section>
+
+    <section class="slide shout">
+      <div>
+        <h2>Rozwiązanie</h2>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>ExceptionID.js - banalny pomysł</h2>
+        <ol>
+          <li>biblioteka dla NodeJS oraz Bower</li>
+          <li>flow pracy</li>
+        </ol>
+        <h2>moje inspiracje</h2>
+        <ol>
+          <li>kod i flow pracy w Centralnym Ośrodku Informatyki czyli tkz. CIN</li>
+          <li>Google's Guava lib</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Eid</h2>
+        <pre>
+          <code><mark class="comment">// Obiekt przechowujący informacje o błędzie</mark></code>
+          <code>var eid = new Eid(<mark class="important">'20160111:173211'</mark>, <mark>'WJS-001'</mark>);</code>
+          <code><mark class="comment">// '20160111:173211' - unikalne ID</mark></code>
+          <code><mark class="comment">// 'WJS-001' - opcjonalny numer referencyjny</mark></code>
+          <code><mark class="comment">// z zewnętrznego źródła</mark></code>
+        </pre>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Eid - standardowa reprezentacja</h2>
+        <pre>
+          <code>var eid = new Eid('20160111:173211');</code>
+          <code>eid.toString();</code>
+          <code><mark class="comment">↵ [20160111:173211]&lt;sk9ym6&gt;</mark></code>
+          <code>new Eid('20160111:173211').toString();</code>
+          <code><mark class="comment">↵ [20160111:173211]&lt;b9qoq0&gt;</mark></code>
+          <code>new Eid('20160111:173211', 'WJS-002').toString();</code>
+          <code><mark class="comment">↵ [20160111:173211|WJS-002]&lt;dbo1az&gt;</mark></code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Eid*Exception - zestaw wyjątków</h2>
+        <ol>
+          <li>EidRuntimeException</li>
+          <li>EidNullPointerException</li>
+          <li>EidIllegalArgumentException</li>
+          <li>EidIllegalStateException</li>
+          <li>EidIndexOutOfBoundsException</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Eid*Exception - przykłady użycia</h2>
+        <pre>
+          <code>var eid = new Eid(<mark>"20160110:095947"</mark>);</code>
+          <code>throw new EidIllegalArgumentException(eid);</code>
+          <code>throw new EidNullPointerException(<mark>"20160111:130412"</mark>);</code>
+          <code>var cause = 'No react library';</code>
+          <code>throw new EidIllegalStateException(<mark>"20150721:100554"</mark>, cause);</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Eid*Exception - efekt?</h2>
+        <pre style="font-size: 0.55em">
+          <code>ERROR 2016-01-11T22:48:42.445 <mark>EidIllegalStateException</mark>: [<mark class="important">20150721:100554</mark>]&lt;<mark>rww5y3</mark>&gt; No react library</code>
+<code>    at http://localhost:3000/browser/toplevel/eid.min.js:1:3959</code>
+<code>    at Object.i.3.../eid (http://localhost:3000/browser/toplevel/eid.min.js:1:4211)</code>
+<code>    at r (http://localhost:3000/browser/toplevel/eid.min.js:1:254)</code>
+<code>    at http://localhost:3000/browser/toplevel/eid.min.js:1:305</code>
+<code>    at http://localhost:3000/browser/toplevel/eid.min.js:1:536</code>
+<code>    at Object.i.1.../../lib/eid (http://localhost:3000/browser/toplevel/eid.min.js:1:974)</code>
+<code>    at r (http://localhost:3000/browser/toplevel/eid.min.js:1:254)</code>
+<code>    at t (http://localhost:3000/browser/toplevel/eid.min.js:1:421)</code>
+<code>    at http://localhost:3000/browser/toplevel/eid.min.js:1:438);</code>
+        </pre>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Eid*Exception - efekt?</h2>
+        <pre>
+          <code><mark class="comment">// podzielona linia na fragmenty</mark></code>
+          <code><mark>EidIllegalStateException</mark>: ↵ <mark class="comment">// typ błedu, zawsze</mark></code>
+          <code>[<mark class="important">20150721:100554</mark>] ↵ <mark class="comment">// ID unikalne, zawsze</mark></code>
+          <code>&lt;<mark>rww5y3</mark>&gt; ↵ <mark class="comment">// losowe ID, zawsze</mark></code>
+          <code>No react library <mark class="comment">// komunikat, opcjonalny</mark></code>
+        </pre>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Eid*Exception - error 500 page done right</h2>
+        <img style="height:300px" src="pictures/google-500-error-ok.png" />
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Mając numer Eid wiemy gdzie wystąpił błąd w originalnym kodzie</h2>
+        <img style="height:230px" src="http://tuhaj.github.io/debugging-js/pictures/debug_view_1.png" />
+      </div>
+    </section>
+
+    <section class="slide shout">
+      <div>
+        <h2>Ale, skąd te numery?</h2>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Generatory Eid - flow pracy</h2>
+        <blockquote>Aby pracować wydajnie i uniknąć copy &amp; paste potrzebne nam generatory...</blockquote>
+        <br />
+        <ol>
+          <li><a href="http://plugins.netbeans.org/plugin/53137/exception-id-eid-generator">EidGenerator for Netbeans IDE</a></li>
+          <li><a href="https://github.com/wavesoftware/java-eid-exceptions/wiki/Generating%20Exception%20Id%20number%20in%20Intellij%20IDEA%20with%20Live%20Templates">Generating Exception Id number in Intellij IDEA with Live Templates</a></li>
+        </ol>
+        <p>W najbliższych planach wsparcie dla IDE Atom</p>
+      </div>
+    </section>
+
+    <section class="slide cover">
+      <div>
+        <iframe width="1024" height="640" src="https://www.youtube-nocookie.com/embed/6ZBCSZvsN5k?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=6ZBCSZvsN5k" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions</h2>
+        <ol>
+          <li>Zestaw wygodnych metod pomocniczych</li>
+          <li>Połączenie pomysłu Google w bibiotece Guava z Eid</li>
+          <li>Przyśpieszenie procesu developmentu</li>
+        </ol>
+        <p>Przykład importu:</p>
+        <pre>
+          <code>var checkNotNull = Eid.preconditions.checkNotNull;</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions - checkArgument</h2>
+        <blockquote>checkArgument method should be used to check argument of the method, and validate it in technical terms (not business terms)</blockquote>
+        <br/>
+        <pre>
+          <code>function sqrt(value) {</code>
+          <code>  checkArgument(<mark class="important">value >= 0.0</mark>, "20150718:012333");</code>
+          <code>  // if ok, calculate the square root</code>
+          <code>}</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions - checkState</h2>
+        <blockquote>checkState method should be used to check state of the class in given moment, and validate it in technical terms (not business terms)</blockquote>
+        <br />
+        <pre>
+          <code>checkState(<mark class="important">r >= 0.0 &amp;&amp; mass > 0.0</mark>, "20150721:115016");</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions - checkNotNull</h2>
+        <blockquote>checkNotNull method should be used to check if given non null argument is actually null</blockquote>
+        <br />
+        <pre>
+          <code>var safeUser = checkNotNull(<mark class="important">user</mark>, "20150721:115515");</code>
+          <code><mark class="comment">// także checkNotUndefined</mark></code>
+          <code><mark class="comment">// oraz checkNotNullable</mark></code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions - checkElementIndex</h2>
+        <blockquote>checkElementIndex method can be used to test parameters of an array, before being used</blockquote>
+        <br />
+        <pre>
+          <code>checkElementIndex(<mark class="important">index, list.length</mark>, "20150721:115749");</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>EidPreconditions - tryToExecute</h2>
+        <blockquote>tryToExecute method can be used to handle operations, that are intended to operate properly, but technically can fail.</blockquote>
+        <br />
+        <pre>
+          <code>var content = EidPreconditions.tryToExecute(function() {</code>
+          <code>  var fs = require('fs');</code>
+          <code>  return fs.<mark class="important">readFileSync('bower.json')</mark>;</code>
+          <code>}, "20150718:121521");</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide shout">
+        <div>
+            <h2>Bonusowo!</h2>
+        </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Eid - logowanie</h2>
+        <pre>
+          <code>log.debug(new Eid("20151119:121814")</code>
+          <code> ↵ .<mark>makeLogMessage</mark>("REST request: %s", request));</code>
+        </pre>
+        <h2>output:</h2>
+        <pre>
+          <code>2017-01-08 16:45:34,334 DEBUG [20151119:121814]&lt;d1afca&gt; </code>
+          <code> ↵ REST request received: &lt;RestRequest user=&lt;User id=345&gt;</code>
+          <code> ↵ flow=ShowLastTransactions step=Confirm&gt;</code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="slide cover" style="background-color: #fff">
+        <div>
+            <img src="pictures/thanks.png" alt="" style="padding-top: 60px;" />
+        </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Linki</h2>
+        <ol>
+          <li><a href="https://github.com/wavesoftware/javascript-eid-exceptions">ExceptionID.js @ Github</a></li>
+          <li><a href="https://rawgit.com/wavesoftware/javascript-eid-exceptions/develop/dist/browser/index.html">Eid - live showcase</a></li>
+          <li><a href="https://github.com/google/guava/wiki/PreconditionsExplained">Google's guava preconditions explained</a></li>
+          <li><a href="http://plugins.netbeans.org/plugin/53137/exception-id-eid-generator">EidGenerator for Netbeans IDE</a></li>
+          <li><a href="https://github.com/wavesoftware/java-eid-exceptions/wiki/Generating%20Exception%20Id%20number%20in%20Intellij%20IDEA%20with%20Live%20Templates">Generating Exception Id number in Intellij IDEA with Live Templates</a></li>
+          <li><a href="http://tuhaj.github.io/debugging-js">Piotr Zientara @ WarsawJS #13</a></li>
+          <li><a href="http://twitter.com/ksuszynski">@ksuszynski</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide shout">
+        <div>
+            <h2>See you @ WarsawJS</h2>
         </div>
     </section>
 

@@ -1,4 +1,4 @@
-# WarsawJS Slides: Template
+# ExceptionID.js on WarsawJS #17
 
 ![Logo](/pictures/logo/logo-light.png)
 
