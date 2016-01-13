@@ -31,7 +31,7 @@
                 <h2>Krzysztof Suszyński</h2>
 
                 <!-- 3. Presentation title -->
-                <h2><strong>"ExceptionID.js - sytuacje wyjątkowe w aplikacjach JS"</strong></h2>
+                <h2><strong>"ExceptionID.js - sytuacje wyjątkowe<br />w aplikacjach JS"</strong></h2>
 
                 <!-- 4. Presentation date -->
                 <h2>2016-01-13</h2>
@@ -54,7 +54,7 @@
           <ul>
             <li>Ewangelizuje Javą i Puppetem</li>
             <li class="fragment">Główny programista w COI / Trener w SAGES</li>
-            <li>Javascript hater &amp; fanboy od 2007r.</li>
+            <li>Javascript hater &amp; fanboy od 2007 r.</li>
             <li>OSS @ gov</li>
           </ul>
           <span>
@@ -105,7 +105,7 @@
 
     <section class="slide">
       <div>
-        <h2>Powiem jak sprawić by strony 500 były przydatne</h2>
+        <h2>Powiem jak sprawić, by strony 500 były przydatne</h2>
         <img style="height:300px" src="pictures/google-500-error.png" />
       </div>
     </section>
@@ -165,7 +165,7 @@
         </ol>
         <h2>moje inspiracje</h2>
         <ol>
-          <li>kod i flow pracy w Centralnym Ośrodku Informatyki czyli tkz. CIN</li>
+          <li>kod i flow pracy w Centralnym Ośrodku Informatyki, czyli tzw. CIN</li>
           <li>Google's Guava lib</li>
         </ol>
       </div>
@@ -250,7 +250,7 @@
         <h2>Eid*Exception - efekt?</h2>
         <pre>
           <code><mark class="comment">// podzielona linia na fragmenty</mark></code>
-          <code><mark>EidIllegalStateException</mark>: ↵ <mark class="comment">// typ błedu, zawsze</mark></code>
+          <code><mark>EidIllegalStateException</mark>: ↵ <mark class="comment">// typ błędu, zawsze</mark></code>
           <code>[<mark class="important">20150721:100554</mark>] ↵ <mark class="comment">// ID unikalne, zawsze</mark></code>
           <code>&lt;<mark>rww5y3</mark>&gt; ↵ <mark class="comment">// losowe ID, zawsze</mark></code>
           <code>No react library <mark class="comment">// komunikat, opcjonalny</mark></code>
@@ -268,14 +268,14 @@
 
     <section class="slide">
       <div>
-        <h2>Mając numer Eid wiemy gdzie wystąpił błąd w originalnym kodzie</h2>
+        <h2>Mając numer Eid wiemy gdzie wystąpił błąd w oryginalnym kodzie</h2>
         <img style="height:230px" src="http://tuhaj.github.io/debugging-js/pictures/debug_view_1.png" />
       </div>
     </section>
 
     <section class="slide shout">
       <div>
-        <h2>Ale, skąd te numery?</h2>
+        <h2>Ale skąd te numery?</h2>
       </div>
     </section>
 
@@ -283,7 +283,7 @@
     <section class="slide">
       <div>
         <h2>Generatory Eid - flow pracy</h2>
-        <blockquote>Aby pracować wydajnie i uniknąć copy &amp; paste potrzebne nam generatory...</blockquote>
+        <blockquote>Aby pracować wydajnie i uniknąć copy &amp; paste, potrzebne nam generatory...</blockquote>
         <br />
         <ol>
           <li><a href="http://plugins.netbeans.org/plugin/53137/exception-id-eid-generator">EidGenerator for Netbeans IDE</a></li>
@@ -342,7 +342,7 @@
     <section class="slide">
       <div>
         <h2>EidPreconditions - checkNotNull</h2>
-        <blockquote>checkNotNull method should be used to check if given non null argument is actually null</blockquote>
+        <blockquote>checkNotNull method should be used to check, if given not null argument is actually null</blockquote>
         <br />
         <pre>
           <code>var safeUser = checkNotNull(<mark class="important">user</mark>, "20150721:115515");</code>
@@ -366,7 +366,7 @@
     <section class="slide">
       <div>
         <h2>EidPreconditions - tryToExecute</h2>
-        <blockquote>tryToExecute method can be used to handle operations, that are intended to operate properly, but technically can fail.</blockquote>
+        <blockquote>tryToExecute method can be used to handle operations, that are intended to operate properly, but technically can fail</blockquote>
         <br />
         <pre>
           <code>var content = EidPreconditions.tryToExecute(function() {</code>
